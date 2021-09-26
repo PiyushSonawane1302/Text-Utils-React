@@ -40,19 +40,11 @@ export default function TextForm(props) {
                     <label style={{ backgroundColor: props.mode === 'dark' ? '#1c2a35' : '' }} htmlFor="mytextbox" className={`form-label badge text-wrap ${props.mode === 'light' ? 'bg-dark' : ''} p-2 ms-2 fs-6`}>Enter your Text here 👇</label>
                     <textarea style={{ backgroundColor: props.mode === 'dark' ? '#1c2a35' : '', border: props.mode === 'dark' ? 'none' : '', color: props.mode === 'dark' ? '#fff' : '' }} onChange={handleOnChange} placeholder={"Enter Text ✍"} value={text} className="form-control mt-2" id="mytextbox" rows="6"></textarea>
                 </div>
-               
-                        <button style={{ backgroundColor: props.mode === 'dark' ? '#1c2a35' : '' }} onClick={handleUppercase} className="btn btn-dark m-2">Upper case</button>
-                  
-                  
-                        <button style={{ backgroundColor: props.mode === 'dark' ? '#1c2a35' : '' }} onClick={handleLowercase} className="btn btn-dark ms-2">Lower case</button>
-                
-                  
-                        <button style={{ backgroundColor: props.mode === 'dark' ? '#1c2a35' : '' }} onClick={handleRemoveSpaces} className="btn btn-dark ms-2">Remove Extra Spaces</button>
-                    
-                        <button style={{ backgroundColor: props.mode === 'dark' ? '#1c2a35' : '' }} onClick={handleCleartext} className="btn btn-dark ms-2">Clear</button>
-                  
 
-            
+                <button style={{ backgroundColor: props.mode === 'dark' ? '#1c2a35' : '' }} onClick={handleUppercase} className="btn btn-dark m-2">Upper case</button>
+                <button style={{ backgroundColor: props.mode === 'dark' ? '#1c2a35' : '' }} onClick={handleLowercase} className="btn btn-dark ms-2">Lower case</button>
+                <button style={{ backgroundColor: props.mode === 'dark' ? '#1c2a35' : '' }} onClick={handleRemoveSpaces} className="btn btn-dark ms-2">Remove Extra Spaces</button>
+                <button style={{ backgroundColor: props.mode === 'dark' ? '#1c2a35' : '' }} onClick={handleCleartext} className="btn btn-dark ms-2">Clear</button>
 
             </div>
 
